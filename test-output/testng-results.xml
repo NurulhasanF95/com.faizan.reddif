@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-04-02T09:51:02 IST" name="Default suite" finished-at="2021-04-02T09:51:14 IST" duration-ms="11683">
+    <groups>
+    </groups>
+    <test started-at="2021-04-02T09:51:02 IST" name="Default test" finished-at="2021-04-02T09:51:14 IST" duration-ms="11683">
+      <class name="com.faizan.reddif.base.Testbase">
+        <test-method signature="browserSetup()[pri:0, instance:com.faizan.reddif.base.Testbase@1622f1b]" started-at="2021-04-02T09:51:02 IST" name="browserSetup" finished-at="2021-04-02T09:51:14 IST" duration-ms="11502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetup -->
+      </class> <!-- com.faizan.reddif.base.Testbase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

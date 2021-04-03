@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.385 s <<< FAILURE! - in TestSuite
+com.faizan.reddif.testscript.TC_001.validateLoginPageUrl  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError: expected [https://opensource-demo.orangehrmlive.com/] but found [https://opensource-demo.orangehrmlive.com/index.php/auth/validateCredentials]
+	at com.faizan.reddif.testscript.TC_001.validateLoginPageUrl(TC_001.java:37)
+
