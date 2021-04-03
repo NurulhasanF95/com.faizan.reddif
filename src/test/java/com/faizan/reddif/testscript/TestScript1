@@ -1,0 +1,56 @@
+package com.faizan.reddif.testscript;
+
+import org.testng.Assert;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.DataProvider;
+import org.testng.annotations.Test;
+
+import com.faizan.reddif.base.Testbase;
+import com.faizan.reddif.pages.LoginPage;
+import com.faizan.reddif.util.Read_Excel;
+
+public class TestScript1 extends Testbase
+{
+	LoginPage page;
+	
+	@BeforeTest
+	public void setUp()
+	{
+		browserSetup();
+		page=new LoginPage();
+	}
+	
+	@Test(priority = 1)
+	public void validateLoginPageTitle()
+	{
+		String actualTitle=page.verifyTitle();
+		Assert.assertEquals(actualTitle, "OrangeHRM");
+	}
+	
+	@Test(priority = 2)
+	public void validateLoginPageUrl()
+	{
+		String actualUrl=page.verifyUrl();
+		
+		Assert.assertEquals(actualUrl, "https://opensource-demo.orangehrmlive.com/");
+	}
+	
+	@Test(priority = 3)
+	public void validateLoginPaneltxt()
+	{
+		String actualText=page.verifyLoginpaneltext();
+		
+		Assert.assertEquals(actualText,"LOGIN Panel");
+	}
+	
+
+	@AfterTest
+	public void tearDown()
+	{
+		driver.close();
+	}
+	
+	
+
+}
